@@ -1,0 +1,76 @@
+[safe]
+    directory = /mnt/c/repos/core/filing-bank-integration-service
+    directory = /mnt/c/repos/core/filing-data-migration
+    directory = /mnt/c/repos/core/filing-global-metadata-service
+    directory = /mnt/c/repos/core/filing-immap-service
+    directory = /mnt/c/repos/core/filing-metadata-service
+    directory = /mnt/c/repos/core/filing-pump-service
+    directory = /mnt/c/repos/core/filing-returns-service
+    directory = /mnt/c/repos/core/filing-s1-permission-mapper
+    directory = /mnt/c/repos/core/filing-settings-transfer-service
+    directory = /mnt/c/repos/core/filing-tools
+    directory = /mnt/c/repos/core/s1-e-comm-integration-service
+    directory = /mnt/c/repos/shared/filing-report-service
+    directory = /mnt/c/repos/shared/s1-transmission-service
+    directory = /mnt/c/repos/shared/s1-rendering-service
+    directory = /mnt/c/repos/engine/filing-data-service
+    directory = /mnt/c/repos/engine/filing-fusionsvc-alloy-filing-engine
+    directory = /mnt/c/repos/s1/s1-client-admin-service
+    directory = /mnt/c/repos/s1/s1-event-service
+    directory = /mnt/c/repos/s1/s1-iam-service
+    directory = /mnt/c/repos/s1/s1-notification-service
+    directory = /mnt/c/repos/s1/s1-platform-core
+    directory = /mnt/c/repos/s1/s1-spring-boot-parent-pom
+    directory = /mnt/c/repos/snowflake/filing-audit-consumer
+    directory = /mnt/c/repos/snowflake/filing-reprocessing-service
+    directory = /mnt/c/repos/filing-next-gen-filing-frontend
+    directory = /mnt/c/repos/filing-metadata
+    directory = /mnt/c/repos/core/filing-assets-service
+    directory = /mnt/c/repos/s1/s1-apigateway
+    directory = /mnt/c/repos/core/filing-client-settings-service
+[alias]
+    la = config --get-regexp ^alias
+    aa = add --all
+    pl = pull
+    ps = push
+    bv = branch -vv
+    ba = branch -ra
+    bd = branch -d
+    ac = add --all ; commit -m
+    ca = commit --amend
+    cb = checkout -b
+    cd = checkout development ; pull
+    cm = commit -m
+    cam = commit -a --amend -C HEAD
+    ci = commit -a -v
+    co = checkout
+    di = diff
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    mn = merge --no-commit --no-ff
+    mm = merge --no-ff
+    md = merge development
+    st = status --short --branch
+    ss = stash
+    sp = stash pop
+    tg = tag -a
+    pu = push --tags
+    un = reset --hard HEAD  
+    uh = reset --hard HEAD^
+
+[color]
+    diff = auto  
+    status = auto  
+    branch = auto
+
+[user]
+    name = Christopher Waugh
+    email = christopher.waugh@sovos.com
+
+[difftool "sourcetree"]
+    cmd = "'' "
+
+[mergetool "sourcetree"]
+    cmd = "'' "
+    trustExitCode = true
