@@ -582,10 +582,10 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 
 eval "$(zoxide init bash)"
 
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-eval "$(atuin init bash)"
+# [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+# eval "$(atuin init bash)"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # wholespace
 # clean-detailed
-eval "$(oh-my-posh init bash --config /home/chris/.local/share/oh-my-posh/themes/quick-term.omp.json)"
+eval "$(oh-my-posh init bash --config /home/chris/.local/share/oh-my-posh/themes/clean-detailed.omp.json)"
